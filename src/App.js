@@ -4,7 +4,7 @@ import "./App.css";
 import io from "socket.io-client";
 
 
-const CONNECTION_PORT = "https://muradschat.herokuapp.com/";
+const CONNECTION_PORT = "muradschat.herokuapp.com/";
 let socket;
 
 function App() {
