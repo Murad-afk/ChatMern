@@ -4,7 +4,7 @@ import "./App.css";
 import io from "socket.io-client";
 
 
-const CONNECTION_PORT = "localhost:3002/";
+const CONNECTION_PORT = "https://muradschat.herokuapp.com/";
 let socket;
 
 function App() {
@@ -19,10 +19,11 @@ function App() {
 
   const [message, setMessage] = useState("");
   const [messageList, setMessageList] = useState([{}]);
+  
   useEffect(() => {
     socket = io(CONNECTION_PORT);
   }, [CONNECTION_PORT]);
-  useEffect(() => {
+  useEffect(() => {    
     socket.on("receive_message", (data) => {
       setMessageList([...messageList, data]);
     });
