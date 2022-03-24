@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.App{
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+
+}
+.logIn {
+width: 100%;
+height: 100vh;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logIn input{
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #0091ff;
+  background-color: transparent;
+  padding-left: 10px;
+  
+  font-size: 15px;
+}
+
+.logIn input:focus{
+  outline: none;
+}
+
+.logIn button{
+
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #0091ff;
+  color: white;
+  font-size: 16px;
+  margin-top: 45px;
+}
+
+.logIn button:hover{
+  cursor: pointer;
+  background-color: #037edc;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ 
+}
+.message-inputs {
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+}
+.message-inputs input {
+  width: 80%;
+}
+.message-inputs button {
+  width: 20%;
+  border: none;
+  background-color: #0091ff;
+  color: white;
+
+}
+.message-inputs button:hover {
+background-color: rgb(0, 47, 255);
+}
+.messages{
+
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  border: 1px solid rgb(2, 0, 0);
+  height: 90vh;
+  overflow-x: hidden;
+overflow-y: scroll;
+  text-align:justify;
+}
+.message-text{
+  display: inline-block;
+  background-color: rgb(16, 133, 201);
+  word-wrap: break-word;
+border-radius: 10px;
+}
+h2{
+ font-size: 20px;
+  padding: 5px;
+
+  color: white;
+  max-width: 30vw;
+  white-space: normal !important;
+
+}
+.your{
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  
+}
+.my{
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+display: flex;
+  justify-content: right;
+  align-items: center;
+
+}
+.ref{
+  margin-bottom: 5vh;
+}
